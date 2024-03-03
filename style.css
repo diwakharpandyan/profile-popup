@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 22rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card-bg-profile_pic-container {
+  height: 35%;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  height: 65%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.profile-pic {
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  height: 7rem;
+  margin-top: 9rem;
+  position: absolute;
+}
+.profile-name {
+  font-size: large;
+  margin-top: 3rem;
+}
+span,
+.location,
+hr {
+  color: hsl(0, 0%, 59%);
+}
+hr {
+  width: 100%;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: large;
+}
+.stats-small {
+  font-size: small;
+}
+.stats div {
+  text-align: center;
+}
+.location {
+  margin-top: -1.5rem;
+  font-size: smaller;
+  font-weight: 500;
+}
+@media (max-width: 40rem) {
+  body {
+    background-position: right 40vw bottom 40vh, left 30vw top 50vh;
+  }
+  .card {
+    width: 20rem;
+    height: 22rem;
+  }
+  .profile-pic {
+    margin-top: 8rem;
+  }
+  .location {
+    margin-top: -1rem;
+  }
+}
